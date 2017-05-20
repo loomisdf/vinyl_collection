@@ -20,7 +20,11 @@ class Album(models.Model):
     sleeve_quality = models.CharField(max_length=20)
     vinyl_quality = models.CharField(max_length=20)
 
-    description = models.TextField(default="")
+    def description_default():
+        return "";
+
+    description = models.TextField(default=description_default)
+
 
     def __str__(self):
         return "{0}: {1}".format(self.artist_name, self.album_name)
