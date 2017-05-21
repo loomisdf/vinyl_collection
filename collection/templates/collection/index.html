@@ -1,1 +1,10 @@
-<h1>Collection management</h1>
+{% extends "base.html" %}
+
+{% block title %}VinylC - HOME{% endblock %}
+
+{% block content %}
+<h1>Vinyl Management Home</h1>
+<ul>
+    <li><a href="{% url 'collection:all' %}">All Records</a></li>
+</ul>
+{% endblock %}

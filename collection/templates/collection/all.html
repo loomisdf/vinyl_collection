@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}VinylC - All Records{% endblock %}
+
+{% block content %}
+<h1>Showing all records</h1>
+<ul>
+    {% for album in all_albums %}
+    <li>{{ album }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
