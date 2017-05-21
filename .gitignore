@@ -1,5 +1,8 @@
 *.pyc
 *.swp
-*.*~
+*~
+venv
 db.sqlite3
 local_settings.py
+.env
+staticfiles
