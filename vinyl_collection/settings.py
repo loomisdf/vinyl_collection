@@ -77,9 +77,11 @@ WSGI_APPLICATION = 'vinyl_collection.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbcollection',
-        'USER': 'loomisdf',
+        'NAME': os.environ['POSTGRESDATABASE'],
+        'USER': os.environ['POSTGRESUSER'],
         'PASSWORD': os.environ['POSTGRESPW'],
+        'HOST': os.environ['POSTGRESHOST'],
+        'PORT': os.environ['POSTGRESPORT'],
     }
 }
 
