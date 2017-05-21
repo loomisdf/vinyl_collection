@@ -25,7 +25,7 @@ SECRET_KEY = 'w0q3!i(d-+!j!8@!vrmy22y19#^752*u=25qy7_&7rd&75zd-d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', 'vinyl-collection.herokuapp.com']
 
 
 # Application definition
