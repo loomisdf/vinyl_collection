@@ -2,8 +2,11 @@
 
 {% block title %}VinylC - HOME{% endblock %}
 
+{% block page-header %}
+<h2>Vinyl Management Home</h2>
+{% endblock %}
+
 {% block content %}
-<h1>Vinyl Management Home</h1>
 <ul>
     <li><a href="{% url 'collection:all' %}">All Records</a></li>
 </ul>
