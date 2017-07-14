@@ -4,9 +4,28 @@
 
 {% block content %}
 <h1>Showing all records</h1>
-<ul>
-    {% for album in all_albums %}
-    <li>{{ album }}</li>
-    {% endfor %}
-</ul>
+<table class="table">
+    <thead class="thead-inverse">
+        <tr>
+            <th>#</th>
+            <th>Album</th>
+            <th>Artist</th>
+            <th>Sleeve Quality</th>
+            <th>Vinyl Quality</th>
+            <th>Skips</th>
+        </tr>
+    </thead>
+    </tbody>
+        {% for album in all_albums %}
+        <tr>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td>{{ album.album_name }}</td>
+            <td>{{ album.artist_name }}</td>
+            <td>{{ album.sleeve_quality }}</td>
+            <td>{{ album.vinyl_quality }}</td>
+            <td>{{ album.skips }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}
